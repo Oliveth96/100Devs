@@ -1,0 +1,164 @@
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+}
+  
+/* Clear fix hack */
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clear {
+    clear: both;
+}
+  
+/******************************************
+/* BASE STYLES
+/*******************************************/
+  
+body {
+  
+}
+  
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    background-color: rgb(104, 119, 138);
+} 
+main {
+    margin: 0 150px;
+}
+header ul{
+    list-style: none;
+    height: 100px;
+    color: white;
+    display:block;
+}
+.nav1{
+    height: 100px;
+    width: 33.3333%;
+    float: left;
+}
+.nav1 *{
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.nav2{
+    height: 100px;
+    width: 33.3333%;
+    float: left;
+}
+.nav2{
+    padding-left: 150px;
+}
+.nav3{
+    height: 220px;
+    width: 33.3333%;
+    float: left;
+}
+.nav3{
+    padding-left: 150px
+}
+header #Nenne *{
+    color: white;
+    padding-bottom: 10px;
+}
+header #Nenne > h1{
+    font-size: 300%;
+    text-align: center;
+}
+header #Nenne > p *{
+    text-indent: 35%;
+    text-align-last: center;
+}
+#Nenne .gritspan2{
+    color: black;
+    font-style: italic;
+}
+.junior *{
+    background: white;
+    color: black;
+}
+.junior > h2 {
+    text-indent: 45%;
+    margin-top: 100px;
+}
+.junior p{
+    margin-bottom: 100px;
+    text-align-last: center;
+}
+#two{
+    background: whitesmoke;
+    height: 500px;
+}
+#two .gym .hire{
+    float: left;
+    width: 100px;
+}
+#two > .gym{
+    float:left;
+    width:40%;
+    padding: 80px 0;
+    padding-left: 250px;
+    color:#313639;
+    text-align: center;
+}
+#two > .hire{
+    float:left;
+    width:40%;
+    padding: 80px 0;
+    padding-left: 250px;
+    color: #313639;
+    text-align: center;
+}
+.volunteer{
+    background: white;
+    text-align: center;
+    color:#313639;
+    height: 350px;
+    padding: 60px 0;
+}
+footer{
+    background: rgb(34, 34, 54);
+    color: white;
+    height: 350px;
+}
+#icons{
+list-style: none;
+}
+footer .site .arts{
+    float: left;
+    width: 100%;
+}
+footer > .site{
+    float: left;
+    width: 50%;
+}
+footer ul *{
+    list-style: none;
+}
+footer .arts{
+    float: left;
+    width: 50%;
+}
+footer h6 {
+    color: black;
+    padding: 0 35px;
+}
+footer img{
+    list-style: none;
+}
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  
+  /* 
+  
