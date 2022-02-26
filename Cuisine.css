@@ -1,0 +1,163 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    background-image: url(cuisine.webp);
+    height: 500px;
+}
+header nav{
+float: left;
+width: 100%;
+padding-left: 350px;
+list-style: none;
+text-decoration: none;
+padding-left: 350px;
+clear:both;
+}
+header > nav li{
+    list-style: none;
+}
+li *{
+    text-decoration: none;
+}
+li *{
+    float: left;
+    width:13%;
+}
+.icons{
+    padding-right: 20px;
+}
+Header > .main > h2{
+    padding-top: 125px;
+    font-size: 50px;
+    padding-left: 45px;
+}
+.main > form {
+    padding-left: 45px;
+}
+.main > form button{
+    background: orange;
+    color: white;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.SM{
+    margin-top: 30px;
+}
+.food{
+    float: left;
+    width: 100%;
+    background: white;
+}
+.food #waffle{
+    float: left;
+    width: 40%;
+}
+.food .content{
+    float: left;
+    width: 50%
+}
+.food #cereal{
+    float: left;
+    width:10%;
+    margin-top: 500px;
+}
+.content span{
+    margin-top: 30px;
+    color:orange;
+}
+.content > h2{
+    padding-left: 20px;
+    color: black;
+    font-size: 50px;
+}
+.content  p{
+    letter-spacing: .2rem;
+    text-align: justify;
+}
+.content .styled{
+    margin-top: 30px;
+    background: orange;
+    color: white;
+    line-height: 1.5;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+#sections{
+    background-color: #eff0f1;
+    height: 500px;
+}
+#sections span{
+    padding-left: 560px;
+    color: orange;
+}
+#sections h3{
+    text-align: center;
+    font-size: 50px;
+}
+#sections #menu {
+    float: left;
+    padding-left: 340px;
+}
+#sections #menu a{
+    text-decoration: none;
+    padding-right: 30px;
+}
+#menu ul{
+    border-bottom: 1px solid grey;
+}
+#sections > #png{
+    float: left;
+    width: 100%;
+}
+#sections > #png{
+    padding-left: 180px;
+}
+#sections > #png *{
+    padding-right: 50px;
+}
+#sections > #batch{
+    float: left;
+    width: 100%;
+}
+#sections > #batch{
+    padding-left: 180px;
+}
+#sections > #batch *{
+    padding-right:50px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
