@@ -1,0 +1,22 @@
+let x = 3
+
+OPERATOR  | DESCRIPTION |  COMPARISON | RETURNS
+==    | equals to | x == 8 | False
+
+===   |exactly equal to | x === "3"| False
+===   |exactly equal to  | x === 3  | True
+in type and value
+
+!=    | is not equal |x != 8 | True
+
+!==   | is not equal | x !== "3" |True
+!==   | is not equal | x !== 3 | False
+neither value nor type
+
+>     | greater than | x > 8 | False
+
+<     | less than | x < 8 | True
+
+>=    |greater than or equal to| x >= 8| False
+
+<=    |less than or equal to| x <= 8| True
