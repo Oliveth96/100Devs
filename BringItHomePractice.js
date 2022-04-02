@@ -73,7 +73,7 @@ multipliesThreeNumbers ("50", "2", "10")
 
 var product = multipliesThreeNumbers((Math.random() * 1000) + 1);
 if (product) {
-  var output = "";
+  var output =  "";
   if (product % 3 == 0)
     output += "ZEBRA";
   
