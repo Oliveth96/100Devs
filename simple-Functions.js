@@ -45,7 +45,7 @@ function addTwoAndDivide(n1, n2, n3) {
     return (n1 + n2) % n3
 }
   
-console.log (addTwoAndDivide("20", "5", "3")) //output: 1
+console.log (addTwoAndDivide("20", "5", "3") ) //output: 1
 
 
 //---Hard
@@ -60,9 +60,11 @@ function takeFourMultiply (zee1, zee2, me3, me4) {
     if (product > 100) {
         console.log (me3 + me4)
     
-    } else if (product < 100) {
+    }
+    if (product < 100) {
         console.log (me3 - me4)
-    } else if (product == 100) {
+    }
+    if (product === 100) {
         return (zee1 * zee2 * me3) % me4
     }
 }
