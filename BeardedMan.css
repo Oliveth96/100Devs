@@ -1,0 +1,213 @@
+/* Selects the root element of the document:
+   <html> in the case of HTML */
+:root {
+	--clr-bg: rgba(239, 237, 248, 255);
+	--clr-skin: rgba(246, 192, 156, 255);
+	--clr-ear: rgba(243, 166, 140, 255);
+	--clr-red: rgba(230, 65, 42, 255);
+	--clr-red-dark: rgba(183, 28, 32, 255);
+	--clr-hair: rgba(0, 37, 56, 255);
+	--clr-white: rgba(254, 255, 255, 255);
+	--clr-hair-shadow: rgba(2, 0, 0, 255);
+	--clr-hair-extra: rgba(1, 68, 88, 255);
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--clr-bg);
+}
+
+.container {
+	position: relative;
+	width: 25vmin;
+}
+
+.head {
+	position: relative;
+	height: 35vmin;
+	width: 100%;
+	background-color: var(--clr-ear);
+	border-radius: 20vmin 20vmin 0 0;
+	/* 	filter: drop-shadow(0 0 1vmin var(--clr-hair-extra)); */
+}
+.mouth {
+	position: absolute;
+	top: 0;
+	height: 90%;
+	width: 100%;
+	background-color: var(--clr-skin);
+	border-radius: 10vmin;
+}
+.head::before,
+.head::after {
+	content: "";
+	position: absolute;
+	top: 45%;
+	width: 4vmin;
+	aspect-ratio: 1;
+	background-color: var(--clr-ear);
+	z-index: -1;
+}
+.head::after {
+	left: 95%;
+	border-radius: 0 3vmin 3vmin 0;
+}
+.head::before {
+	right: 95%;
+	border-radius: 3vmin 0 0 3vmin;
+}
+
+.shirt {
+	height: 4vmin;
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	background-color: var(--clr-red);
+	transform: scalex(1.2);
+}
+
+.shirt::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	height: 2vmin;
+	width: 100%;
+	background-color: var(--clr-red-dark);
+	transform: scalex(0.9);
+}
+.beard {
+	position: absolute;
+	bottom: -1vmin;
+	left: 50%;
+	width: 60%;
+	aspect-ratio: 1;
+	background-color: var(--clr-hair);
+	border-radius: 50%;
+	transform: translatex(-50%);
+	box-shadow: inset 0 -4vmin 0 0 var(--clr-hair-shadow);
+}
+.beard::after,
+.beard::before {
+	content: "";
+	position: absolute;
+	width: 4vmin;
+}
+.beard::before {
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	aspect-ratio: 1;
+	background-color: var(--clr-skin);
+	border-radius: 50%;
+}
+.beard::after {
+	top: 25%;
+	left: 50%;
+	height: 2vmin;
+	background-color: #fff;
+	border-radius: 0 0 3vmin 3vmin;
+	transform: translatex(-50%);
+}
+
+.eye {
+	position: absolute;
+	height: 2vmin;
+	aspect-ratio: 1;
+	background-color: var(--clr-hair);
+	top: 35%;
+	border-radius: 50%;
+	z-index: 999;
+}
+
+.eye1 {
+	left: 65%;
+}
+.eye2 {
+	right: 65%;
+}
+.hair-back {
+	position: absolute;
+	height: 13vmin;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: var(--clr-hair-shadow);
+	transform: translate(-20%, -20%);
+}
+.hair-front {
+	position: absolute;
+	right: 25%;
+	top: 0;
+	transform: translateY(-50%);
+	z-index: 11;
+}
+
+.circle {
+	height: 15vmin;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: var(--clr-hair);
+}
+
+.boat-shape {
+	position: absolute;
+	top: 50%;
+	height: 10vmin;
+	width: 28vmin;
+	background-color: var(--clr-hair);
+	border-radius: 0 0 10vmin 10vmin;
+	box-shadow: inset 0 -4vmin 0 -0.75vmin var(--clr-hair-shadow);
+}
+
+.boat-shape::before {
+	content: "";
+	position: absolute;
+	top: -1vmin;
+	height: 100%;
+	width: 100%;
+	background-color: var(--clr-hair);
+	transform: translateY(-5vmin) scale(0.5);
+	border-radius: 0 0 10vmin 10vmin;
+}
+
+.boat-shape::after {
+	content: "";
+	position: absolute;
+	top: 55%;
+	right: 6.8vmin;
+	width: 15vmin;
+	height: 10vmin;
+	background-color: var(--clr-ear);
+	z-index: -1;
+	border-bottom-left-radius: 10vmin;
+}
+
+.light {
+	position: absolute;
+	background-color: var(--clr-hair-extra);
+	border-radius: 1vmin;
+}
+
+.light-top {
+	top: 0;
+	left: 25%;
+	height: 2.3vmin;
+	width: 6.5vmin;
+}
+
+.light-bottom {
+	height: 2vmin;
+	width: 5.5vmin;
+	top: 25%;
+	left: 50%;
+}

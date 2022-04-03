@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head .head1{
+    background-color: #03bb85;
+    width: 50px;
+    height: 60px;
+    margin-bottom: -35px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    transform: rotate(-26deg);
+}
+.head .head2{
+    transform: rotate(26deg);
+}
+.circle{
+    background-color: #03bb85;
+    width: 250px;
+    height: 165px;
+    border-radius: 50%;
+    position: relative;
+}
+.eyes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.eye{
+    margin-top: 40px;
+    width: 40px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.left{
+    margin-top: 40px;
+    width: 18px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 7;
+    left: 69px;
+}
+.right{
+    margin-top: 40px;
+    width: 18px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    right: 69px;
+}
+.mouth{
+    display: flex;
+    justify-content: center;
+}
+.lough{
+    top: 30px;
+    background-color: #fff;
+    width: 90px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.mouth .teeth{
+    background: #000;
+    width: 10px;
+    height: 15px;
+    margin-left: 2px;
+}
+  
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.legs .line{
+    width: 10px;
+    height: 210px;
+    background-color: #03bb85;
+    margin-top: 45px;
+    transform: rotate(15deg);
+    border-radius: 50px;
+}
+.legs .line1{
+    transform: rotate(-15deg);
+}
+.shoes{
+    display: flex;
+    justify-content: space-between;
+}
+.shoe{
+    background: #03bb85;
+    width: 10px;
+    height: 50px;
+    transform: rotate(-40deg);
+    margin-top: -48px;
+    margin-left: 37px;
+    border-radius: 50px;
+}
+.shoe1{
+    transform: rotate(40deg);
+    margin-right: 37px;
+}
