@@ -1,0 +1,11 @@
+body{
+    background: cornsilk;
+    font-family: 'Source Sans Pro', 'Helvetica' sans-serif;
+}
+h1{
+    color: red;
+}
+
+.otherRecipes > li *{
+    text-decoration: none;
+}
