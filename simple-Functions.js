@@ -59,7 +59,6 @@ function takeFourMultiply (zee1, zee2, me3, me4) {
     
     if (product > 100) {
         console.log (me3 + me4)
-    
     }
     if (product < 100) {
         console.log (me3 - me4)
