@@ -1,0 +1,16 @@
+/** Make all h2s red */
+
+h2{
+    color: red;
+}
+
+/** make world and Zebra blue, unicorn and duck red */
+.blue > h2{
+    color: blue;
+}
+
+/** Target duck and turn it purple*/
+
+section + article > h2{
+    color: purple;
+}
