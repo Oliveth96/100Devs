@@ -20,27 +20,26 @@
 /* BASE STYLES
 /*******************************************/
   
-body {
-  
-}
+
   
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
     background-color: rgb(104, 119, 138);
+    padding-left: 30px;
 } 
 main {
-    margin: 0 150px;
+    padding: 0 50px 0 150px;
 }
-header ul{
+
+header nav{
     list-style: none;
     height: 100px;
     color: white;
-    display:block;
+    display: block;
 }
 .nav1{
-    height: 100px;
     width: 33.3333%;
     float: left;
 }
@@ -51,36 +50,46 @@ header ul{
     padding: 0;
 }
 .nav2{
-    height: 100px;
     width: 33.3333%;
     float: left;
-}
-.nav2{
     padding-left: 150px;
 }
+
 .nav3{
-    height: 220px;
     width: 33.3333%;
     float: left;
 }
 .nav3{
     padding-left: 150px
 }
-header #Nenne *{
+#Nenne {
     color: white;
-    padding-bottom: 10px;
+    height: 300px;
+
 }
 header #Nenne > h1{
-    font-size: 300%;
-    text-align: center;
+    font-size: 50px;
+    text-align: start;
 }
 header #Nenne > p *{
     text-indent: 35%;
-    text-align-last: center;
+    text-align: justify;
+
+}
+#Nenne > .center{
+    text-align: center;
+}
+#Nenne .gritspan1{
+    padding-left: 450px;
+    
 }
 #Nenne .gritspan2{
     color: black;
     font-style: italic;
+    padding-left: 430px;
+}
+#Nenne > img{
+    padding-top: 10px;
 }
 .junior *{
     background: white;
@@ -88,7 +97,7 @@ header #Nenne > p *{
 }
 .junior > h2 {
     text-indent: 45%;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .junior p{
     margin-bottom: 100px;
@@ -155,6 +164,8 @@ footer h6 {
 footer img{
     list-style: none;
 }
+
+ 
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
