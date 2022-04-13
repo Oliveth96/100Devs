@@ -52,8 +52,26 @@ main section {
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
-  @media all and (max-width:600px) {
+  @media all and (max-width:300px) {
       section{
           color: blue;
       }
+      /** main{
+          display: none;
+      }
+      */
   }
+
+  @media (min-width: 601px) and (max-width: 109px){
+      section{
+        background: red;
+      }
+  }
+
+  /** if i want my contents to stack */
+  /**@media (min-width: 301px) and (max-width: 600px){
+      header, footer, div,  main{
+          width: 100%;
+      }
+  } */
+  
