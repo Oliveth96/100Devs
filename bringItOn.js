@@ -7,7 +7,7 @@ console.log (Age)
 // Create a variable, add 10 to it, and alert the value
 
 let dogAge = 25
-dogAge = dogAge + 10
+dogAge = dogAge + 10 //dogAge += 10
 alert(dogAge)
 
 // *Functions*
@@ -31,7 +31,8 @@ console.log(divideNumberModulus(10, 3))
 // Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
 
 function addTwoAlert (zee1, zee2) {
-    if (zee1 + zee2 > 50) {
+    let sum = zee1 + zee2
+    if (sum > 50) {
         alert('JUMANJI')
     }
 }
@@ -54,7 +55,7 @@ mulThree (5,9,4)
 //Create a function that takes in a word and a number. Console log the word x times where x was the number passed in
 
 function logWordXTimes (word, num) {
-    for(i = 1; i <= num; i++) {
+    for(let i = 1; i <= num; i++) {
         console.log(word)
     }
 }
