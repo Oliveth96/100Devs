@@ -22,4 +22,4 @@ averageNumber. forEach((num) => sum += averageNumber)
 // for (let i = 0; i < averageNumber.length; i++){
 //    sum += averageNumber[i] // sum = sum + averageNumber[i]
 // }
- 
+ console.log (sum / averageNumber.length )
