@@ -6,22 +6,6 @@
 let numbs = [10, 20, 30, 40, 50]
 
 
-/***
- *  function takeArray (arr){
-    let x = arr[0]
-    let y = arr[arr.length -1]
-    if (x < y){
-        alert ("Hi")
-
-    } else if (x > y){
-        alert ("BYE")
-
-    } else {
-        alert("We close in an hour")
-    }
-}
-*/
-
 function checkFirstAndLast(arr){
     if (arr[0] < arr[arr.length -1]){
         alert ("Hi")
