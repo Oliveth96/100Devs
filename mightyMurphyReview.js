@@ -43,8 +43,19 @@ function headsAndTails(){
     }
 }
 
-headsAndTails
+// const headsAndTails = _ => Math.random() < .5 ? 'heads' : 'tails'
+
+console.log(headsAndTails())
 
 //*Loops*
 //Create a function that takes in a number. 
 // Console log the result of heads or tails using the previous function x times where x is the number passed into the function. Call the function.
+
+function flipNumbers(y){
+    for (let i = 1; i <= y; i++){
+        let result = headsAndTails() //function headsAndTails from above
+        console.log(result)
+    }
+}
+
+flipNumbers(1)
