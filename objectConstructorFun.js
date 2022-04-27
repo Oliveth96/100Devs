@@ -1,19 +1,19 @@
 //Create a constructor with 4 properties and 3 methods
-
+//JavaScript ES6+ syntax 
 class SodaDrinkFactory {
-    constructor(sodaBrand, sodaFlavor, sodaAlcoholicContent, sodaSize) {
+    constructor (sodaBrand, sodaFlavor, sodaAlcoholicContent, sodaSize) {
         this.brand = sodaBrand
-        this.toppings = sodaFlavor
+        this.flavor = sodaFlavor
         this.alcoholicContent = sodaAlcoholicContent
         this.size = sodaSize
-
-        this.popSound = function(){
-            console.log('pop pop pop pop')
-        }
-        this.getHigh = function(){
-            console.log('WE HIGHHHHHHHHH')
-        }
         
+    }
+
+    popSound (){
+        console.log('pop pop pop pop')
+    }
+    getHigh (){
+        console.log('WE HIGHHHHHHHHH')
     }
 }
 
