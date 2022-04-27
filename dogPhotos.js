@@ -4,7 +4,7 @@ fetch("https://dog.ceo/api/breeds/image/random")
 .then(res => res.json()) //parse response as JSON
 .then(data => {
     console.log(data.message)
-    document.querySelector('img').src = data.message  //This take the message we receive from the api and send to the DOM everytime we refresh the page
+    document.querySelector('img').src = data.message  //Every time I refresh, I make a request to the server and the server send a new object containing a url link, which sends cute pics of dogs.
 })
 .catch (err => {
     console.log('error ${err}')
