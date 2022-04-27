@@ -13,7 +13,8 @@ alert(sum)
 //Create a function that takes in an array of numbers
 //Return a new array of numbers that is every original number squared
 
-
+let newArr = arrNumber => arrNumber.map ( num => num**2) //We can also use math.pow()
+console.log()
 
 //Create a function that takes in array of strings
 //Print the reverse of that string to the console

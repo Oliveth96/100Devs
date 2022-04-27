@@ -75,3 +75,24 @@ mouse.rightClick = function(){
 mouse.scroll = function(){
     console.log( 'JUMP JUMP JUMP' )
 } 
+
+//Create a dog object that has four properties and three methods
+
+let dog = {}
+
+dog.name = "Thelma "
+dog.breed = "Caucasian"
+dog.color = "golden"
+dog.legs = 4
+
+dog.bark = function() {
+    console.log("WOOF WOOF WOOF")
+}
+
+dog.jump = function () {
+    console.log ('BLAST OFF')
+}
+
+dog.fetch = function() {
+    console.log('ZOOOOOOOOOOOM')
+}
