@@ -1,0 +1,13 @@
+.title{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: "Rubik Moonrocks", "sans-sherif" ;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 35vh;
+    width: 100%;
+}

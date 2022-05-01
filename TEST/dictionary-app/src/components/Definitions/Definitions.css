@@ -1,0 +1,10 @@
+.meanings{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll ;
+}
+
+.subtitle {
+    font-size: 5vw;
+    font-family: "Rubik Moonrocks", "sans-serif";
+}
