@@ -4,6 +4,7 @@ import "./App.css";
 import { FaSearch } from "react-icons/fa";
 import { FcSpeaker } from "react-icons/fc";
 
+//To display random words and meanings
 
 
 function App() {
@@ -13,7 +14,7 @@ const [data, setData] = useState("");
 const [searchWord, setSearchWord] = useState("");
 
 // Function to fetch information on button
-// click, and set the data accordingly
+
 function getMeaning() {
 	Axios.get(
 	`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchWord}`
@@ -83,6 +84,7 @@ return (
 	)}
 	</div>
 );
+
 }
 
 export default App;
