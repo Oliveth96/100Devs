@@ -2,3 +2,48 @@ p{
     color: purple;
     font-size: 24;
 }
+li {
+    font-size: 24px ;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: solid;
+    font-variant: normal;
+    flex-wrap: wrap;
+
+}
+
+
+h1{
+    font: italic normal bold 24px "Rubik Moonrocks";
+    
+}
+
+.container{
+    width: 200px;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.box{
+    width: 100px;
+    height: 100px;
+}
+  
+.red{
+    background-color: red;
+}
+  
+.black{
+    background-color: black;
+}
+
+.outer {
+    display: flex;
+    border: 2px dotted orange;
+}
+.inner {
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+}
