@@ -1,0 +1,19 @@
+//Example fetch using pokemonapi.com
+
+// A clickEvent that calls the function getFetch. little smurfs
+document.querySelector('button').addEventListener('click', getFetch)
+
+function getFetch(){
+  const choice = document.querySelector('input').value.toLowerCase()
+  const url = 'https://pokeapi.co/api/v2/pokemon/'+choice // ${choice}
+  
+  fetch(url)
+      .then(res => res.json()) // parse response as JSON
+      .then(data => {
+        console.log(data)
+      })
+      .catch(err => {
+          console.log(`error ${err}`)
+      });
+}
+
