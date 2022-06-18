@@ -34,7 +34,7 @@ print(df.value_counts())
 
 median = list(bincomeDressColors.values())
 print(df.sort_values(by=['monday'], ascending=True))
-
+#The color of the median is Green
 
 
 #BONUS Get the variance of the colors
@@ -46,22 +46,22 @@ print(df.var())
 DB_HOST = "olivethudagramdev.clzgrxfqt7ii.us-east-1.rds.amazonaws.com "
 DB_NAME = "olivethudagram"
 DB_USER = "olivethudagram"
-DB_PASSWORD = "olivethudagram"
+DB_PASSWORD = " "
 
 con = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
 
 cur = con.cursor()
 
-cur.execute("CREATE TABLE BINCOM COLOR CHART (id SERIAL PRIMARY KEY, day VARCHAR, colors LONGTEXT); ")
-cur.execute("INSERT INTO BINCOM COLOR CHART (day) VALUES(%s, %s, %s, %s, %s) ",
-			("monday", "tuesday", "wednesday", "thursday", "friday"))
+cur.execute("CREATE TABLE BINCOM COLOR CHART (id SERIAL PRIMARY KEYl, colors VARCHAR, frequency VARCHAR); ")
 
-cur.execute("SELECT * FROM BINCOM COLOR CHART;")
-print(cur.fetchall())
+cur.execute("INSERT INTO BINCOM COLOR CHART (colours) VALUES(%s) ",("blue"));
+cur.execute("INSERT INTO BINCOM COLOR CHART (frquency) VALUES(%d) ",(28))
+
 con.commit()
 cur.close()
 
 con.close()
+
 #BONUS write a recursive searching algorithm to search for a number entered by user in a list of numbers.
 
 #print(np.random.randint(0, 10, 9))
@@ -119,7 +119,7 @@ def fib(n):
         b = c
         print(c)
 
-#fib(50)
+fib(50)
 
 
 
