@@ -19,3 +19,15 @@ while True:
     for c in aPassword) and sum(c.isdigit() for c in aPassword) >= 3):
         print(aPassword)
         break
+
+"""
+Module providing any length of password
+"""
+
+
+passlen = int(input("Please enter length of password: "))
+
+letters = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+
+P = "".join(random.sample(letters, passlen ))
+print(P)
