@@ -1,5 +1,6 @@
 import secrets
 import string
+import random
 '''
 Generates a ten-character alphanumeric password
 '''
