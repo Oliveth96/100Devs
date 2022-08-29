@@ -1,0 +1,103 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+  font-family: "Rubik Moonrocks", cursive;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+
+header {
+  margin-left: 5px;
+  padding-top: 20px;
+  font-size: larger;
+  border: 1px solid #e3e8e3;
+  height: 70px;
+  width: 100%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.menuBar {
+  height: 70px;
+  width: 85%;
+  float: left;
+}
+
+#user {
+  height: 70px;
+  width: 15%;
+  float: right;
+}
+#prodName{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.content {
+  height: 100px;
+  width: 100%;
+  margin-left: 5px;
+}
+#addNew {
+  height: 70px;
+  width: 50%;
+  float: left;
+}
+
+body > table{
+  width:80%;
+}
+
+table{
+  border-collapse:collapse;
+
+}
+table.list{
+  width:100%;
+}
+td, th{
+  border:1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even), table.lts thead>tr{
+  background-color: #ddd;
+}
+
+input{
+  width:60%;
+  padding: 12px 20px;
+  margin:8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
